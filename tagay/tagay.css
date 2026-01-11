@@ -1,0 +1,158 @@
+/* --- Общие стили --- */
+body {
+    font-family: 'Comfortaa', cursive; /* Игровой, округлый шрифт */
+    background-color: #e0f7fa; /* Нежный голубой фон */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Шапка сайта --- */
+header {
+    background: linear-gradient(135deg, #81d4fa 0%, #4fc3f7 100%); /* Градиент от светло-голубого к среднему */
+    color: white;
+    padding: 60px 20px;
+    border-bottom-left-radius: 50px; /* Скругление нижнего левого угла */
+    border-bottom-right-radius: 50px; /* Скругление нижнего правого угла */
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5em;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.grade-info {
+    font-size: 1.3em;
+    margin-top: 15px;
+    opacity: 0.95;
+}
+
+/* --- Секция контактов (номер телефона) --- */
+.contact-info {
+    margin: 40px 0;
+}
+
+h2 {
+    color: #26c6da; /* Бирюзовый заголовок */
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after { /* Подчеркивание для заголовков */
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: #80deea;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    display: inline-block; /* Чтобы карточка была по размеру контента */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-width: 280px;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.phone-link {
+    text-decoration: none;
+    color: #0097a7; /* Темно-бирюзовый цвет для номера */
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-link .icon {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #00bcd4; /* Яркий бирюзовый для иконки */
+}
+
+/* --- Секция проектов --- */
+.projects-section {
+    padding: 30px 0 60px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-image-placeholder {
+    height: 180px;
+    background-color: #b2ebf2; /* Светло-бирюзовый */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00796b; /* Темный бирюзовый для текста */
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 3px solid #80deea;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    margin-top: 0;
+    color: #00838f; /* Еще темнее бирюзовый */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* --- Подвал сайта --- */
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    background-color: #b2ebf2; /* Светло-бирюзовый подвал */
+    color: #00796b;
+    font-size: 0.9em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
